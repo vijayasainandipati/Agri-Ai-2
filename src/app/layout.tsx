@@ -32,7 +32,14 @@ export default function RootLayout({
         >
           <AuthProvider>
             <LanguageProvider>
-              {children}
+              <div className="min-h-screen flex flex-col">
+                <main className="flex-1">
+                  {children}
+                </main>
+                <footer className="py-4 text-center text-sm text-muted-foreground border-t">
+                  © 2025 Vijaya Sai Nandipati. All rights reserved.
+                </footer>
+              </div>
               <Toaster />
             </LanguageProvider>
           </AuthProvider>
