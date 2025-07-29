@@ -7,6 +7,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+    // Netlify configuration
   images: {
     remotePatterns: [
       {
